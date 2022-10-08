@@ -1,0 +1,45 @@
+.signature-container{
+background-color:rgb(225, 240, 252);
+border: 1px solid rgb(185, 179, 179);
+height:300px ;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-bottom: 20px;
+}
+.signature-box{
+    width: 80%;
+    margin: 10px;
+}
+.srollBar {
+    background-color: lightblue;
+    border: 1px solid rgb(185, 179, 179);
+    height: 100px;
+    width: 100%;
+    overflow-x: scroll;
+    display: flex;
+    align-items: center;
+ }
+.srollBar .scroll{
+width: fit-content;
+height: 100%;
+padding: 10px;
+background-color: rgb(225, 240, 252);
+display: flex;
+align-items: center;
+}
+.scroll .p{
+    padding: 3px 10px;
+    width: 100px;
+    height: 60px;
+    background-color:white;
+    margin-right: 15px;
+    /* font-size: larger; */
+}
+.scroll .p img{
+    height: 100%;
+    width: 60px;
+    object-fit: contain;
+    cursor: pointer;
+}

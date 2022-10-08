@@ -1,0 +1,118 @@
+Created: 01/01/2016
+By: Webduck
+Email: webduck.design@gmail.com
+
+
+First of all, thank you for purchasing "301 Email Signature"  If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form. Thanks so much!
+
+********
+
+A) Content of the Download Pack
+
+You should find 301 different psd & html files as mentioned below folder name  in the download pack:
+
+HTML folder ( 43 files in each folders)
+
+01) EmailSignature_BLUE
+02) EmailSignature_BROWN
+03) EmailSignature_GREEN
+04) EmailSignature_PINK
+05) EmailSignature_PURPLE
+06) EmailSignature_RED
+07) EmailSignature_YELLOW
+
+PSD folder ( 43 design variations layers in each psd file)
+
+01) EmailSignature_BLUE.psd
+02) EmailSignature_BROWN.psd
+03) EmailSignature_GREEN.psd
+04) EmailSignature_PINK.psd
+05) EmailSignature_PURPLE.psd
+06) EmailSignature_RED.psd
+07) EmailSignature_YELLOW.psd
+
+
+*******
+
+B) PSD Folder Structure
+
+All layer inside the psd files are grouped & well arranged as listed below:
+
+- Signature 1
+- Signature 2
+- Signature 3
+- Signature 4
+- Signature 5
+- Signature 6
+- Signature 7
+- Signature 8
+- Signature 9
+- Signature 10
+- Signature 11
+- Signature 12
+- Signature 13
+- Signature 14
+- Signature 15
+
+till so on....
+
+- Signature 43
+
+
+*******
+
+C) How to Edit Image in photoshop
+
+Step1
+Open your image & copy it
+
+Step 2
+Download  "301 Email Signature" Unzip Main.zip file.
+Open psds file in photoshop.
+Dubble click on "Image" Layer in photo folder.
+
+Step3
+Paste your image here. Save Image & Close the file. Its Done :)
+
+*******
+
+D) How to Edit  in html
+
+Open any html page in dreamweaver or html editor.
+Change code as per your requirement for color change, text & or place logo
+save your images in image folder locations link it to live url.
+save it copy whole html code by just press Ctral+A and paste it in your required email file.
+its done.
+
+
+E) Sources and Credits
+
+I've used the following free fonts & image files as listed below:
+
+
+Fonts:
+
+Raleway
+Download Link:
+http://www.fontsquirrel.com/fonts/montserrat
+
+----
+
+Image Credits:
+http://www.shutterstock.com/
+http://www.flaticon.com/
+
+----
+
+
+---------------------------------------------------------------------------------------
+
+Once again, thank you so much for purchasing  "301 Email Signature"
+
+---------------------------------------------------------------------------------------
+
+Webduck.
+
+
+
+

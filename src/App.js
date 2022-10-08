@@ -1,10 +1,14 @@
 import './App.css';
-import Navbar from './Design/Navbar';
+import Generate from './Components/Generate';
+import Navbar from './Design//Navbar/Navbar';
+import Logo from './Design/Navbar/Logo';
 
 function App() {
   return (
     <main>
       <Navbar/>
+      <Logo/>
+      <Generate/>
     </main>
   );
 }
