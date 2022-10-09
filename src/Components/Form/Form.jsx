@@ -6,33 +6,28 @@ import Official from './Official'
 import Personal from './Personal'
 
 
-export default function Form({formData , setFormData,name,setName}) {
+export default function Form({previewPic,formData ,setFormData}) {
  const [page, setPage] = useState(0);
 
  const componentList = [
     <Personal 
     formData={formData}
     setFormData={setFormData}
-    page={page}
-    setPage={setPage}
-    setName={setName}
-    name={name}/>,
+    />,
 
     <Official
     formData={formData}
     setFormData={setFormData}
-    page={page}
-    setPage={setPage}/>,
+    />,
     <Others
     formData={formData}
     setFormData={setFormData}
-    page={page}
-    setPage={setPage}/>,
+    previewPic={previewPic}
+    />,
     <Social
     formData={formData}
     setFormData={setFormData}
-    page={page}
-    setPage={setPage} />,
+     />,
   ];
   
   return (
