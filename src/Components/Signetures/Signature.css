@@ -47,6 +47,6 @@ align-items: center;
     cursor: pointer;
 }
 .copy .btn-danger{
-    border: 1px solid white;
-    background-color: green;
+    border: 1px solid #753f2f;
+    background-color:#753f2f;
 }

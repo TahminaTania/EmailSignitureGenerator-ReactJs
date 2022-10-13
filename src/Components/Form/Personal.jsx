@@ -14,13 +14,6 @@ const Personal = ({page, setPage,formData, setFormData,name,setName}) => {
         />
          <input
           type="text"
-          placeholder={formData.occupation}
-          className="form-group"
-          // value={formData.occupation}
-          onChange={(e) => setFormData({ ...formData, occupation: e.target.value })}
-        />
-         <input
-          type="text"
           placeholder={formData.email}
           className="form-group"
           // value={formData.email}
@@ -33,9 +26,21 @@ const Personal = ({page, setPage,formData, setFormData,name,setName}) => {
           // value={formData.website}
           onChange={(e) => setFormData({ ...formData, website: e.target.value })}
         />
-        <button onClick={() => { setPage(page + 1);}}>
-          Next
-        </button>
+         <input
+          type="text"
+          placeholder={formData.phone}
+          className="form-group"
+          // value={formData.phone}
+          onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+        />
+        <input
+          type="text"
+          placeholder={formData.mobile}
+          className="form-group"
+          // value={formData.mobile}
+          onChange={(e) => setFormData({ ...formData, mobile: e.target.value })}
+        />
+
       </div> 
         
     );

@@ -6,7 +6,7 @@ import Official from './Official'
 import Personal from './Personal'
 
 
-export default function Form({previewPic,formData ,setFormData}) {
+export default function Form({thmColor, fntColor,setTheme ,setFont,previewPic,formData ,setFormData}) {
  const [page, setPage] = useState(0);
 
  const componentList = [
@@ -19,25 +19,28 @@ export default function Form({previewPic,formData ,setFormData}) {
     formData={formData}
     setFormData={setFormData}
     />,
-    <Others
-    formData={formData}
-    setFormData={setFormData}
-    previewPic={previewPic}
-    />,
     <Social
     formData={formData}
     setFormData={setFormData}
      />,
+    <Others
+    formData={formData}
+    setFormData={setFormData}
+    previewPic={previewPic}
+    thmColor={thmColor} 
+    fntColor ={fntColor}
+    setTheme={setTheme} setFont={setFont}
+    />,
   ];
-  
+
   return (
     <div className='Container'>
         <div className='formPage'>
-            <div className="sections">
-                <button className='p' onClick={() => { setPage(0);}}>Personal</button>
-                <button className='p' onClick={() => { setPage(1);}}>Official</button>
-                <button className='p' onClick={() => { setPage(2);}}>Others</button>
-                <button className='p' onClick={() => { setPage(3);}}>Social</button>
+            <div className="row sections">
+                <button className='col-4 p' onClick={() => { setPage(0);}}>Personal</button>
+                <button className='col-4 p' onClick={() => { setPage(1);}}>Official</button>
+                <button className='col-4 p' onClick={() => { setPage(2);}}>Social</button>
+                <button className='col-4 p' onClick={() => { setPage(3);}}>Others</button>
             </div>
             <div className='form-box'>{componentList[page]}</div>
         </div>

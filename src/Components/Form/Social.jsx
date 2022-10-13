@@ -2,7 +2,8 @@ import React from "react";
 
 const Social = ({page, setPage,formData, setFormData}) => {
     return (
-        <div className="box" style={{ backgroundColor:"#d7ecff",borderRadius:0}}>
+        <div className="box">
+            {/* style={{ backgroundColor:"#d7ecff",borderRadius:0}} */}
             <input
                 type="text"
                 placeholder={formData.facebook}
@@ -31,14 +32,21 @@ const Social = ({page, setPage,formData, setFormData}) => {
                 // value={formData.youtube}
                 onChange={(e) => setFormData({ ...formData, instagram: e.target.value })}
             />
+             <input
+                type="address"
+                placeholder={formData.youtube}
+                className="form-group"
+                // value={formData.youtube}
+                onChange={(e) => setFormData({ ...formData, youtube: e.target.value })}
+            />
 
-            <button onClick={() => { setPage(page + 1);}}>
+            {/* <button onClick={() => { setPage(page + 1);}}>
                 Next
             </button>
             <br />
             <button onClick={() => { setPage(page - 1);}}>
                 Previous
-            </button>
+            </button> */}
         </div>
     );
   };

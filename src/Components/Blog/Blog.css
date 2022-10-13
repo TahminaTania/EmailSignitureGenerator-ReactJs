@@ -1,0 +1,37 @@
+.container-fluid{
+    background-color: aliceblue;
+}
+
+.Blog{
+    padding-top: 100px;
+    max-width: 100vw;
+    /* margin: auto; */
+    
+}
+
+.firstBlog,.secondBlog .thirdBlog{
+    overflow: hidden;
+   /* background-color: bisque; */
+}
+
+.firstBlog h1,.secondBlog h1, .thirdBlog h1{
+    color: navy;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    padding: 10px 0px;
+}
+
+.firstBlog p,.secondBlog p, .thirdBlog p{
+    color: rgb(50, 49, 49);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 1.5rem;
+}
+
+.thirdBlog p li{
+    line-height: 2.5rem;
+    color: navy;
+    font-weight: bold;
+}

@@ -6,12 +6,18 @@ import fb from '../Images/temp-img/icon_fb.png'
 import ig from '../Images/temp-img/ig.jpeg'
 import li from '../Images/temp-img/icon_li.png'
 import tw from '../Images/temp-img/icon_tw.png'
+import { motion } from "framer-motion" 
+
 
 export default function Generate() {
+    const [thmColor, setTheme] = useState("#007fe6");
+    const [fntColor, setFont] = useState("#999999");
+
+    console.log("Generate page", thmColor)
 
     const [file, setFile] = useState();
     function previewPic(e) {
-        console.log(e.target.files);
+        // console.log(e.target.files);
         setFile(URL.createObjectURL(e.target.files[0]));
     }
 
@@ -32,6 +38,7 @@ export default function Generate() {
         facebook: "https://www.facebook.com/robartlong/",
         twitter: "https://www.twitter.com/robartlong/",
         instagram: "https://www.instagram.com/robartlong/",
+        youtube: "https://www.youtube.com/robartlong/",
         li:li,ig:ig,tw:tw,fb:fb,
 
     
@@ -46,15 +53,32 @@ export default function Generate() {
             <div className='col-md-12'>
                 {/* <h2 className='text-center alert alert-danger'>this is my full Container</h2> */}
                 <div className='row'>
-                    <div className='col-md-5'>
-                        <Form previewPic={previewPic} file={file} formData={formData} setFormData={setFormData}/>
+                    <motion.div 
+                        animate={{ x:0, opacity: 1}}
+                        transition={{
+                            duration: 4,
+                            delay: 0.3,
+                            ease: "easeInOut",
+                        }}
+                        initial={{x:1000,opacity: 0}}
+                    className='col-md-4'>
+                        <Form previewPic={previewPic} file={file} formData={formData} setFormData={setFormData} thmColor={thmColor} setTheme={setTheme} fntColor ={fntColor} setFont={setFont}/>
                     
-                    </div>
+                    </motion.div>
                     <div className='col-md-1'></div>
                 
-                    <div className='col-md-6'>
-                        <Signeture file={file} formData={formData} setFormData={setFormData}/>
-                    </div>
+                    <motion.div
+                    animate={{ x: 0, opacity: 1}}
+                    transition={{
+                        duration: 4,
+                        delay: 0.3,
+                        ease: "easeInOut",
+                    }}
+                    initial={{ x: -1000,opacity: 0,}}
+                    // whileHover={{ scale: 1.2 }}
+                    className='col-md-7'>
+                        <Signeture file={file} formData={formData} setFormData={setFormData} thmColor={thmColor} setTheme={setTheme}  fntColor ={fntColor} setFont={setFont}/>
+                    </motion.div>
                 </div>
             </div>
         </div>

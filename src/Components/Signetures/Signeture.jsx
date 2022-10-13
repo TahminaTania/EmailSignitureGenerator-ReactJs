@@ -12,11 +12,12 @@ import layout3 from '../../Images/layout3.svg'
 import layout4 from '../../Images/layout4.svg'
 import layout5 from '../../Images/layout5.svg'
 import layout6 from '../../Images/layout6.svg'
+import Sixth from './Sixth';
 
 
 
-export default function Signeture({formData,setFormData,file}){
- const [templateID, setTemplateID] = useState(0);
+export default function Signeture({thmColor, fntColor,setTheme ,setFont,formData,setFormData,file}){
+ const [templateID, setTemplateID] = useState(0);  
  const [temp, setTemp] = useState(0);
  const Copy=()=>{
     var range = document.createRange();
@@ -27,11 +28,12 @@ export default function Signeture({formData,setFormData,file}){
    "templateID".select();
   }
  const signetureList = [
-    <First file={file} formData={formData} setFormData={setFormData} Copy={Copy} setTemplateID={setTemplateID}/>,
-    <Second/>,
-    <Third/>,
-    <Fourth/>,
-    <Fifth/>
+    <First file={file} formData={formData} setFormData={setFormData} Copy={Copy} setTemplateID={setTemplateID} thmColor={thmColor} fntColor ={fntColor}/>,
+    <Second formData={formData} setFormData={setFormData} Copy={Copy} setTemplateID={setTemplateID} thmColor={thmColor} fntColor ={fntColor}/>,
+    <Third formData={formData} setFormData={setFormData} Copy={Copy} setTemplateID={setTemplateID} thmColor={thmColor} fntColor ={fntColor} setTheme={setTheme} setFont={setFont}/>,
+    <Fourth file={file} formData={formData} setFormData={setFormData} Copy={Copy} setTemplateID={setTemplateID} thmColor={thmColor} fntColor ={fntColor}/>,
+    <Fifth file={file}  formData={formData} setFormData={setFormData} Copy={Copy} setTemplateID={setTemplateID} thmColor={thmColor} fntColor ={fntColor}/>,
+    <Sixth thmColor={thmColor} fntColor ={fntColor}setTheme={setTheme} setFont={setFont}/>
     
 
  ];
@@ -49,7 +51,7 @@ export default function Signeture({formData,setFormData,file}){
                 <button onClick={() => { setTemp(2);}}><img src={layout3}/></button>
                 <button onClick={() => { setTemp(3);}}><img src={layout4}/></button>
                 <button onClick={() => { setTemp(4);}}><img src={layout5}/></button>
-                <button onClick={() => {''}}><img src={layout6}/></button>
+                <button onClick={() => {setTemp(5);}}><img src={layout6}/></button>
                 <button onClick={() => {''}}><img src={layout1}/></button>
                 <button onClick={() => {''}}><img src={layout1}/></button>
                 <button onClick={() => {''}}><img src={layout1}/></button>
